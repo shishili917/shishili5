@@ -32,7 +32,8 @@ library(splitTools)
 library(caret)
 ```
 
-```{r}
+
+```{r, echo=FALSE}
 #get tweets data
 twitter_token <- create_token(
   app = "516project",
@@ -40,6 +41,9 @@ twitter_token <- create_token(
   consumer_secret = "RJCEvK2AqSbB5YSIrao2JfDxIqf2pEN2vdJ0V5XuHx551ifMaf",
   access_token = "373190113-XI056rrTPPToGEjRJ24QszXacgFZBGja11zLVppt",
   access_secret = "ppBA9oHoaDHMKAPdzWO0jzGeL0BADbfp6rGKb7nodYtYn")
+```
+
+```{r}
 #Finding username 
 bill = lookup_users("BillNye")
 dimant = lookup_users("eugen_dimant")
